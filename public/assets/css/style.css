@@ -1,0 +1,67 @@
+:root {
+    --bg: #131E53;
+    --clr-1: #F1F0EA;
+    --clr-2: #9B8863;
+    --clr-3: #ffff;
+}
+
+.clr-g{
+    color: var(--clr-2)!important;
+}
+
+.clr-b{
+    color:var(--bg)!important;
+}
+
+body {
+    color: var(--clr-3) !important;
+    font-family: 'Tajawal', sans-serif!important;
+    background-color: var(--clr-1) !important;
+    overflow-x: hidden!important;
+}
+
+
+.frm {
+    /* From https://css.glass */
+background: rgba(241, 240, 234, 0.38);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.1px);
+-webkit-backdrop-filter: blur(11.1px);
+border: 1px solid rgba(241, 240, 234, 0.23);
+padding:  8%;
+border-radius: 20px;
+margin-top: 40%;
+}
+
+.btn-primary {
+    background-color: var(--clr-2)!important;
+    border: none!important;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--bg)!important;
+}
+
+.p-tow .btn-primary {
+    background-color: var(--clr-3)!important;
+    border: none!important;
+    color: var(--bg)!important;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 25px;
+}
+.p-tow  .btn-primary:hover {
+    background-color: var(--bg)!important;
+    color: var(--clr-3)!important;
+}
+
+.map-b {
+    border: solid 5px var(--clr-3);
+    height: 300px;
+}
+.detail-b{
+    border: solid 5px var(--clr-3);
+    height: 500px;
+}
