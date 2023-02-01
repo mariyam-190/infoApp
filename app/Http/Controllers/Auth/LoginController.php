@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
 
 class LoginController extends Controller
 {
@@ -35,7 +37,7 @@ class LoginController extends Controller
     }
     else if(Auth::user()->role_as == '0')
     {
-        return redirect('/home')->with('status', 'Logged In Successful');
+        return redirect('/')->with('status', 'Logged In Successful');
     }
     else
     {
@@ -43,7 +45,7 @@ class LoginController extends Controller
     }
 }
 
-    /**
+   /**
      * Create a new controller instance.
      *
      * @return void
@@ -53,3 +55,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 }
+
